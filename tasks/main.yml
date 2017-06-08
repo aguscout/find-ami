@@ -1,8 +1,5 @@
 ---
 # tasks for find-ami
-- include_vars :
-    file       : ../defaults/main.yml
-
 - ec2_ami_find :
     ami_tags   : "{{ instance.tags }}"
     region     : "{{ instance.region }}"

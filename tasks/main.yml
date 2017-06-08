@@ -1,0 +1,9 @@
+---
+# tasks for find-ami
+- ec2_ami_find :
+    ami_tags   : "{{ instance.tags }}"
+    region     : "{{ instance.region }}"
+      register     : ami_id
+
+- name: Get AMIs id
+  set_fact: ami_id=ami_id

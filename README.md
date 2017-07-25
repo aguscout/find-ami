@@ -7,7 +7,7 @@ Returns all the AMIs that matches the passed tags.
 Settable variables that are in defaults/main.yml.
 
 * `instance.tags`: A list of all the tags that want to be searched.
-* `instance.region`: The region in which the AMIs are.
+* `instance.region`: The refion in which the AMIs are.
 
 ## Example Playbook
 
